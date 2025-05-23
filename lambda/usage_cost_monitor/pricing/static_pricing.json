@@ -1,0 +1,46 @@
+{
+    "EC2": {
+      "t3.medium": 0.0416,
+      "t3.large": 0.0832,
+      "m5.large": 0.118,
+      "m5.xlarge": 0.236
+    },
+    "EKS": {
+      "cluster_hourly": 0.10
+    },
+    "S3": {
+      "standard_storage_per_gb_month": 0.026,
+      "put_copy_post_list_per_1000": 0.0045,
+      "get_select_per_1000": 0.00035
+    },
+    "Lambda": {
+      "per_1m_invocations": 0.20,
+      "per_gb_second": 0.0000166667
+    }
+  ,
+    "DynamoDB": {
+      "read_request_unit_per_million": 0.25,
+      "write_request_unit_per_million": 1.25
+    },
+    "SNS": {
+      "publish_per_million": 0.50
+    },
+    "WAF": {
+      "request_per_million": 0.60,
+      "web_acl_per_hour": 0.60
+    },
+    "Route53": {
+      "dns_queries_per_million": 0.40,
+      "hosted_zone_per_month": 0.50
+    },
+    "CloudFront": {
+      "requests_per_10000": 0.0075,
+      "data_transfer_out_per_gb": 0.085
+    },
+    "CloudWatch": {
+      "logs_ingest_per_gb": 0.50,
+      "logs_storage_per_gb_month": 0.03,
+      "custom_metrics_per_month": 0.30
+    }
+  }
+  
