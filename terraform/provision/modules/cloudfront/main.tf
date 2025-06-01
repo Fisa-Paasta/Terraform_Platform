@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 resource "aws_cloudfront_origin_access_control" "this" {
   name                              = "${var.name}-oac"
   description                       = "OAC for accessing S3 origin securely"
@@ -69,4 +66,3 @@ resource "aws_cloudfront_distribution" "this" {
     Environment = var.environment
   }
 }
->>>>>>> 101118e (fix: refactor directort)

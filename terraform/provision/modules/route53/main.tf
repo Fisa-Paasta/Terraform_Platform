@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 resource "aws_route53_record" "cloudfront_alias" {
   zone_id = var.route53_zone_id
   name    = var.domain_name
@@ -12,4 +9,3 @@ resource "aws_route53_record" "cloudfront_alias" {
     evaluate_target_health = false
   }
 }
->>>>>>> 101118e (fix: refactor directort)

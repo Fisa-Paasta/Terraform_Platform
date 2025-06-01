@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 resource "aws_iam_role" "ssm_role" {
   name = "${var.name}-ssm-role"
 
@@ -46,4 +43,3 @@ resource "aws_ssm_parameter" "slack_webhook" {
     create_before_destroy = true
   }
 }
->>>>>>> 101118e (fix: refactor directort)
