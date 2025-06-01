@@ -27,3 +27,33 @@ Thumbs.db
 
 # Windows 실행 파일
 .exe
+
+# Terraform
+.terraform
+.tfstate
+.tfstate.backup
+terraform.tfvars
+
+# Lambda 패키지
+packages
+.zip
+
+# Python 캐시 및 환경파일
+__pycache__
+.py[cod]
+.egg-info
+.env
+.log
+
+# IDEEditor
+.vscode
+.idea
+.swp
+.swo
+
+# OS 메타파일
+.DS_Store
+Thumbs.db
+
+# Windows 실행 파일
+.exe

@@ -5,7 +5,6 @@ from services.ec2 import get_ec2_usage_and_cost
 from services.eks import get_eks_usage_and_cost
 from services.s3 import get_s3_usage_and_cost
 from services.lambda_fn import get_lambda_usage_and_cost
-from services.dynamodb import get_dynamodb_usage_and_cost
 from services.rds import get_rds_usage_and_cost
 from services.sns import get_sns_usage_and_cost
 from services.waf import get_waf_usage_and_cost
@@ -29,7 +28,6 @@ def lambda_handler(event, context):
             get_eks_usage_and_cost,
             get_s3_usage_and_cost,
             get_lambda_usage_and_cost,
-            get_dynamodb_usage_and_cost,
             get_rds_usage_and_cost,
             get_sns_usage_and_cost,
             get_waf_usage_and_cost,

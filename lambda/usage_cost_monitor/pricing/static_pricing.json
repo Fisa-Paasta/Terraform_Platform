@@ -18,10 +18,6 @@
       "per_gb_second": 0.0000166667
     }
   ,
-    "DynamoDB": {
-      "read_request_unit_per_million": 0.25,
-      "write_request_unit_per_million": 1.25
-    },
     "SNS": {
       "publish_per_million": 0.50
     },

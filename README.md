@@ -7,12 +7,13 @@
 
 ## 📁 디렉토리 구조
 
+<code>
 lambda/
 ├── resource_manager/ # 리소스 종료/삭제 자동화
 ├── resource_log_collector/ # 리소스 로그 수집
 ├── usage_cost_monitor/ # 서비스별 일간 비용 계산
-├── cost_monitor/ # (예정) 예산 초과/이상 감지
 └── utils/ # 공통 Slack + Fallback 유틸
+</code>
 
 ---
 
@@ -65,17 +66,6 @@ lambda/
 | 2    | `handler.py`에 해당 모듈 `import` 및 `service_modules` 리스트에 등록                                                        |
 | 3    | (선택) `pricing/static_pricing.json`에 해당 서비스 요금 정보 추가                                                           |
 | 4    | IAM 권한은 대부분 `Describe`, `List` 수준으로 충분                                                                          |
-
----
-
-### 4️⃣ `cost_monitor` _(예정)_
-
-| 단계 | 설명                                                             |
-| ---- | ---------------------------------------------------------------- |
-| 1    | `lambda/cost_monitor/index.py` 또는 `services/`에 탐지 로직 구현 |
-| 2    | 예: 예산 초과 탐지, 이상 지표 탐지 등                            |
-| 3    | 필요한 경우 CloudWatch/CostExplorer 권한 추가                    |
-| 4    | Slack 또는 SNS를 통한 경고 알림 포함 가능                        |
 
 ---
 

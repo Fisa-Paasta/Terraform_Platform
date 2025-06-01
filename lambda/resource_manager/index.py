@@ -2,7 +2,6 @@ from services.ec2 import stop_tagged_ec2
 from services.rds import stop_tagged_rds
 from services.eks import delete_tagged_eks
 from services.s3 import delete_tagged_s3
-from services.dynamodb import delete_tagged_dynamodb
 from services.cloudfront import delete_tagged_cloudfront
 from services.waf import delete_tagged_waf
 from services.route53 import delete_tagged_hosted_zones
@@ -15,7 +14,6 @@ def lambda_handler(event, context):
             "RDS": stop_tagged_rds(),
             "EKS": delete_tagged_eks(),
             "S3" : delete_tagged_s3(),
-            "DDB" : delete_tagged_dynamodb(),
             "CF" : delete_tagged_cloudfront(),
             "WAF" : delete_tagged_waf(),
             "R53" : delete_tagged_hosted_zones()
